@@ -9,7 +9,7 @@
 /* Element Selectors*/
 
 body {
-    background-color: #d9dcd6;
+    background-color: #778585;
 }
 
 a {
@@ -19,34 +19,90 @@ a {
 
 p {
     font-size: 16px;
+    
 }
 
-
+/* Style for header, still need to work on button names and styles */
 header {
-    padding: 50px;
+  
+    padding: 30px 30px 30px 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url("file:///C:/Users/Cash Galko/Documents/UCF/Homework/Professional-Portfolio/assets/images/website-background.png");
-    color: #ffffff;
+    background-color: rgb(41, 31, 58);
+    color: rgb(31, 167, 160);
 }
 
 header h1 {
     display: inline-block;
     font-size: 48px;
+    background-color: rgb(31, 167, 160);
+    color: rgb(41, 31, 58);
+    padding-left: 100px;
+    padding-right: 10px;
+    
 }
 
-header div {
+nav {
+    display: flex;
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    align-content: flex-end;
 }
 
-header div ul {
+nav ul {
     list-style-type: none;
+    ;
 }
 
-header div ul li {
+nav ul li {
     display: inline-block;
     margin-left: 25px;
+    border-bottom: rgb(31, 167, 160);
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    color: rgb(31, 167, 160);
 }
+
+nav a {
+    color: rgb(31, 167, 160);
+}
+
+/* Style for background image below header. */
+.hero {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("file:///C:/Users/Cash Galko/Documents/UCF/Homework/Professional-Portfolio/assets/images/website-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* Box design for Aside */
+
+aside {
+    display: flex;
+    padding: 20px;
+    clear: both;
+    float: left;
+    width: 25%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-direction: column;
+   
+}
+
+aside h1 {
+    font-size: 48px;
+    color: rgb(32, 51, 65);
+    margin-left: 150px;
+}
+
+.sidebar {  
+    margin: 20px;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-right-color: rgb(224, 85, 4);
+}
+
+
