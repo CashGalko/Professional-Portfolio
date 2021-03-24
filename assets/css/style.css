@@ -22,10 +22,17 @@ p {
     
 }
 
-/* Style for header, still need to work on button names and styles */
+/* main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+/* Style for header */
+
 header {
   
-    padding: 30px 30px 30px 0px;
+    padding: 0px 30px 0px 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(41, 31, 58);
     color: rgb(31, 167, 160);
@@ -38,17 +45,20 @@ header h1 {
     color: rgb(41, 31, 58);
     padding-left: 100px;
     padding-right: 10px;
-    
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
+/* Beginning of style for the navigation bar */
 
 nav {
     display: flex;
-    padding-top: 15px;
+    padding-top: 40px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    align-content: flex-end;
+    align-content: center;
 }
 
 nav ul {
@@ -66,7 +76,30 @@ nav ul li {
 }
 
 nav a {
+    
+    text-decoration: none;
     color: rgb(31, 167, 160);
+    transition: all 0.25s ease-in;
+    
+}
+
+/* Hover effects on Nav */
+#rele:hover {
+    background-color: rgb(31, 167, 160);
+    color: rgb(41, 31, 58);
+    opacity: 0.7;
+}
+
+#proj:hover {
+    background-color: rgb(31, 167, 160);
+    color: rgb(41, 31, 58);
+    opacity: 0.7;
+}
+
+#cont:hover {
+    background-color: rgb(31, 167, 160);
+    color: rgb(41, 31, 58);
+    opacity: 0.7;
 }
 
 /* Style for background image below header. */
@@ -74,35 +107,198 @@ nav a {
     height: 250px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("file:///C:/Users/Cash Galko/Documents/UCF/Homework/Professional-Portfolio/assets/images/website-background.jpg");
+    background-image: url("../images/website-background.jpg");
     background-size: cover;
     background-position: center;
 }
-/* Box design for Aside */
+/* Section styling for text on side */
 
-aside {
+
+.block {  
     display: flex;
-    padding: 20px;
-    clear: both;
-    float: left;
-    width: 25%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    flex-direction: column;
-   
-}
-
-aside h1 {
-    font-size: 48px;
+    font-size: 175%;
     color: rgb(32, 51, 65);
-    margin-left: 150px;
+   justify-content: space-between;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: stretch;
+   margin-top: 25px;
+   margin-bottom: 25px;
+
 }
 
-.sidebar {  
-    margin: 20px;
-    border-right-width: 3px;
+.block div {
+    flex: 0 0 77%;
+}
+
+.block h1{
+    font-size: 42px;
+    padding: 10px;
+    text-align: right;
     border-right-style: solid;
     border-right-color: rgb(224, 85, 4);
+    border-width: 3px;
+    margin: 0px;
+    flex: 0 0 20%;
+    
 }
 
+/* Container for each of the project images */
+
+.workcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 10px;
+    
+}
+
+/* defines the size of the box for the images */
+.projectbox{
+
+    border-style: solid;
+    border-width: 3px;
+    flex: 0 0 100%;
+    border-color: rgb(224, 85, 4);
+    width: 20%;
+    height: 200px;
+    transition: 1s;
+
+}
+
+/* Hover style for the project boxes */
+
+#smallimage:hover {
+
+    border: 3px solid rgb(224, 85, 4);
+    filter: brightness(130%);
+    -webkit-filter: brightness(130%);
+    -moz-filter: brightness(130%);
+    -o-filter: brightness(130%);
+    -ms-filter: brightness(130%);
+    -webkit-transition: all 0.50s;
+    transition: all 0.50s;
+    
+}
+
+#largeimage:hover {
+
+    border: 3px solid rgb(224, 85, 4);
+    filter: brightness(130%);
+    -webkit-filter: brightness(130%);
+    -moz-filter: brightness(130%);
+    -o-filter: brightness(130%);
+    -ms-filter: brightness(130%);
+    -webkit-transition: all 0.50s;
+    transition: all 0.50s;
+    
+}
+
+/* add the correct size styling to the respective image boxes */
+
+#largeimage {
+    margin-left: 10px;
+    height: 700px;   
+    flex: 0 0 98.5%;
+    -webkit-transition: all 0.50s;
+    transition: all 0.50s;
+    
+}
+
+#smallimage {
+    flex: 0 0 49%;
+    margin-top: 10px;
+    margin-left: 10px;
+    -webkit-transition: all 0.50s;
+    transition: all 0.50s;
+    
+}
+
+/* Styling for project 1 & hover effect */
+
+.project1 {
+    background-color: rgb(230, 120, 56);
+    background-image: url(../images/dave-foret-moodlake-finished-2.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100%;
+     width: 100%;
+     filter: grayscale(100%);
+    
+}
+
+.project1:hover {
+    filter: grayscale(0%);
+}
+
+/* Styling for project 2 & hover effect */
+
+.project2 {
+
+    background-image: url(../images/daniel-romanovsky-forest-dwelling.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100%;
+     width: 100%;
+     filter: grayscale(100%);
+     transition: all 0.50s;
+    
+}
+
+.project2:hover {
+    filter: grayscale(0%);
+}
+
+/* Styling for project 3 & hover effect */
+
+.project3 {
+
+    background-image: url(../images/deng-jing-2lit.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100%;
+     width: 100%;
+     filter: grayscale(100%);
+     transition: all 0.50s;
+}
+
+.project3:hover {
+    filter: grayscale(0%);
+}
+
+/* Styling for project 4 & hover effect */
+
+.project4 {
+
+    background-image: url(../images/desert_with_two_moons_by_raphael_lacoste-d9ni4xg.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100%;
+     width: 100%;
+     filter: grayscale(100%);
+     transition: all 0.50s;
+}
+
+.project4:hover {
+    filter: grayscale(0%);
+}
+
+/* Styling for project 5 & hover effect */
+
+.project5 {
+
+    background-image: url(../images/desertfortress_med_by_dcritelli-da9zbl2.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100%;
+     width: 100%;
+     filter: grayscale(100%);
+     transition: all 0.50s;
+}
+
+.project5:hover {
+    filter: grayscale(0%);
+}
+
+/* Hover effects on the project boxes */
 
