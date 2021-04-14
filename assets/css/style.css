@@ -188,7 +188,7 @@ nav a {
 
 .project1 {
 
-    background-image: url(../images/dave-foret-moodlake-finished-2.jpg); 
+    background-image: url(../images/cryptoApp.png); 
     background-size: cover; 
     background-position: center; 
     height: 100%;
@@ -206,7 +206,7 @@ nav a {
 
 .project2 {
 
-    background-image: url(../images/daniel-romanovsky-forest-dwelling.jpg); 
+    background-image: url(../images/weatherdash.png); 
     background-size: cover; 
     background-position: center; 
     height: 100%;
@@ -224,7 +224,7 @@ nav a {
 
 .project3 {
 
-    background-image: url(../images/deng-jing-2lit.jpg); 
+    background-image: url(../images/passgen.png); 
     background-size: cover; 
     background-position: center; 
     height: 100%;
@@ -334,6 +334,3 @@ nav a {
 
 /* Media Query Section */
 
-/* Sorry Dan & John, I got the COVID vaccine last saturday and the side affects took me out */
-/* all day saturday & sunday. Normally I would have finished this section. */
-/* I'll be sure to finish it later. */
